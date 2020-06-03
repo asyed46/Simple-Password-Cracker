@@ -11,7 +11,7 @@ public class Psswdcrack {
 	public static void main(String[] args) {
 	
 	Scanner input = new Scanner( System.in ); //Sets up scanner to take in user input 
-	System.out.println("Enter a 8 digit password:"); //Prints 
+	System.out.println("Enter a 4 or 8 digit password:"); //Prints to user to input password 
 	
 	int password = Integer.parseInt(input.next( )); //Takes in user inputted password 
 	
@@ -22,7 +22,7 @@ public class Psswdcrack {
 			final long duration = (System.nanoTime() - startTime); //Records program end time
 			System.out.println("Your password was " + i + ". It took " + duration + " nanoseconds to find."); //Prints password and how long it took to determine password
 		}
-		
 	}
+	
 }
 }
